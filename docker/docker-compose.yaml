@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  bot:
+    image: modrinthbot
+    environment:
+      - CHANNEL_ID=<YOUR_CHANNEL_ID>
+      - ID=<YOUR_MOD_ID>
+      - TOKEN=<YOUR_TOKEN>
+    restart: always

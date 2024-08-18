@@ -1,0 +1,6 @@
+.venv
+src/__pycache__
+src/bot/__pycache__
+.DS_Store
+src/httpmod/__pycache__
+src/models/__pycache__

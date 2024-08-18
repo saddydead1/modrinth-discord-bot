@@ -1,0 +1,8 @@
+.venv
+.docker
+.gitignore
+.DS_Store
+src/__pycache__
+src/bot/__pycache__
+src/httpmod/__pycache__
+src/models/__pycache__
