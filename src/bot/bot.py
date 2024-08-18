@@ -35,6 +35,7 @@ class Bot:
         await bot.wait_until_ready()
         global chat
         chat = bot.get_channel(CHAT_ID)
+        await bot.change_presence(status = discord.Status.online, activity=discord.Game(name='Minecraft'))
 
         await Modrinth.update()
 
