@@ -47,6 +47,13 @@ class Bot:
         except Exception as e:
             print(e)
 
+    @bot.event
+    async def on_message(message):
+        if message.author == bot.user:
+            return
+        else:
+            await bot.change_presence(status = discord.Status.online, activity=discord.Game(name='Minecraft'))
+
 
 async def send(text: Version | None) -> None:
     if (text == None):
